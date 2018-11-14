@@ -9,7 +9,7 @@ This repo is a demo of an issue that occurs when you try to use [vue2-google-map
 3. Add a plugin file in the plugins directory (`gmaps.js`), as per [docs](<https://github.com/xkjyeah/vue-google-maps#quickstart-webpack-nuxt>) (see below*)
 4. Add entries to the nuxt.config.js:
 
-line 31:
+line 62:
 
 ```javascript
 vendor: ['babel-polyfill', 'vue2-google-maps'],

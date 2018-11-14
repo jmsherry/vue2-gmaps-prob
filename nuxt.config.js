@@ -28,8 +28,6 @@ module.exports = {
   */
   loading: { color: '#fff' },
 
-  vendor: ['babel-polyfill', 'vue2-google-maps'],
-
   /*
   ** Global CSS
   */
@@ -61,6 +59,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    vendor: ['babel-polyfill', 'vue2-google-maps'],
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
