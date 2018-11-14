@@ -1,5 +1,7 @@
 # Problem with vue2-google-maps nuxt.js integration
 
+This repo is a demo of an issue that occurs when you try to use [vue2-google-maps](<https://www.npmjs.com/package/vue2-google-maps>) with [nuxt.js](<https://nuxtjs.org>) 'out-of-the-box'.
+
 ## Steps to recreate
 
 1. Install nuxt.js with npx
