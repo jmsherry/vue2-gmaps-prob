@@ -28,7 +28,7 @@ module.exports = {
   */
   loading: { color: '#fff' },
 
-  vendor: ['vue2-google-maps'],
+  vendor: ['babel-polyfill', 'vue2-google-maps'],
 
   /*
   ** Global CSS
