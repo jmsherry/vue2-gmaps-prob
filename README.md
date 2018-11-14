@@ -6,7 +6,7 @@ This repo is a demo of an issue that occurs when you try to use [vue2-google-map
 
 1. Install nuxt.js with npx
 2. Say yes to express, vuetify, univeral, axios, eslint, prettier, npm.
-3. Add a plugin file in the plugins directory (`gmaps.js`), as per [docs](<https://github.com/xkjyeah/vue-google-maps#quickstart-webpack-nuxt>)
+3. Add a plugin file in the plugins directory (`gmaps.js`), as per [docs](<https://github.com/xkjyeah/vue-google-maps#quickstart-webpack-nuxt>) (see below*)
 4. Add entries to the nuxt.config.js:
 
 line 31:
@@ -36,6 +36,38 @@ inside the build block extend function (line 46):
           }
         })
       }
+```
+
+*Plugin File:
+
+```javascript
+import Vue from 'vue'
+import * as VueGoogleMaps from 'vue2-google-maps'
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'YOUR_API_TOKEN',
+    libraries: 'places' // , // This is required if you use the Autocomplete plugin
+    // OR: libraries: 'places,drawing'
+    // OR: libraries: 'places,drawing,visualization'
+    // (as you require)
+
+    //// If you want to set the version, you can do so:
+    // v: '3.26',
+  } // ,
+
+  //// If you intend to programmatically custom event listener code
+  //// (e.g. `this.$refs.gmap.$on('zoom_changed', someFunc)`)
+  //// instead of going through Vue templates (e.g. `<GmapMap @zoom_changed="someFunc">`)
+  //// you might need to turn this on.
+  // autobindAllEvents: false,
+
+  //// If you want to manually install components, e.g.
+  //// import {GmapMarker} from 'vue2-google-maps/src/components/marker'
+  //// Vue.component('GmapMarker', GmapMarker)
+  //// then disable the following:
+  // installComponents: true,
+})
 ```
 
 ## Error
