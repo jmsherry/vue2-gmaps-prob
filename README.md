@@ -19,7 +19,7 @@ line 41:
 plugins: ['@/plugins/vuetify', '@/plugins/gmaps'],
 ```
 
-inside the build block (line 46):
+inside the build block extend function (line 46):
 
 ```javascript
       //add for vue2-google-maps
