@@ -4,7 +4,7 @@
 
 1. Install nuxt.js with npx
 2. Say yes to express, vuetify, univeral, axios, eslint, prettier, npm.
-3. Add a plugin file in the plugins directory, as per [docs](<https://github.com/xkjyeah/vue-google-maps#quickstart-webpack-nuxt>)
+3. Add a plugin file in the plugins directory (`gmaps.js`), as per [docs](<https://github.com/xkjyeah/vue-google-maps#quickstart-webpack-nuxt>)
 4. Add entries to the nuxt.config.js:
 
 line 31:
